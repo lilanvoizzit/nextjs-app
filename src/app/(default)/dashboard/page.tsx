@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 import Loading from "./loading";
-const DataComponent = lazy(() => import('../../../components/dataComponent'));
+import DataComponent from "@/components/dataComponent"; 
 
 export default function Dashboard() {
   return (

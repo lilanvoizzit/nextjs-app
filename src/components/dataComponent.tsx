@@ -1,3 +1,4 @@
+'use client'
 // A component that fetches data
 const fetchApiData = () => {
   return new Promise((resolve) => {
@@ -11,5 +12,5 @@ const fetchApiData = () => {
 export default async function  () {
   const apidata = await fetchApiData(); // This can be any async function, like an API call
   console.log('apidata',apidata); 
-  return <>{apidata  && <div>{apidata}</div>}</>;
+  return <>{apidata  && <div>{apidata.toString()}</div>}</>;
 };
